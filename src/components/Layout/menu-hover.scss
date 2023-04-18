@@ -1,0 +1,32 @@
+@import "../../helpers/styles/helpstyle.scss";
+.navigate-point:hover {
+  animation: drawborder 300ms linear forwards;
+  @media screen and (max-width: 700px) {
+    animation: none;
+    border: none;
+  }
+}
+
+@keyframes drawborder {
+  25% {
+    border-top-color: $primary-gold;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    border-top-color: $primary-gold;
+    border-right-color: $primary-gold;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  75% {
+    border-top-color: $primary-gold;
+    border-right-color: $primary-gold;
+    border-bottom-color: $primary-gold;
+    border-left-color: transparent;
+  }
+  100% {
+    border-color: $primary-gold;
+  }
+}

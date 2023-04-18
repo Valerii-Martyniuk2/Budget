@@ -1,0 +1,101 @@
+@import "../../helpers/styles/helpstyle.scss";
+.BudgetInfo-half {
+  width: 50%;
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+//////TOP INFO
+.top-info-confirm {
+  height: 56px;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition-duration: 0.3s;
+  z-index: 100;
+  border: 1px solid orange;
+  div {
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  p {
+    font-size: 16px;
+    text-align: center;
+    width: 50%;
+    padding: 20px 10px 20px 10px;
+  }
+  .select-imgArrow {
+    cursor: pointer;
+  }
+  @media screen and (max-width: 560px) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.top-info-confirm-hover {
+  &:hover {
+    cursor: pointer;
+    animation: btnborder 300ms linear forwards;
+  }
+}
+.top-info-badget {
+  min-height: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  input {
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-right: 10px;
+    border: 1px solid orange;
+    background-color: $prev;
+    cursor: pointer;
+    &:hover {
+      animation: btnborder 300ms linear forwards;
+    }
+  }
+  button {
+    height: 30px;
+    border-radius: 5px;
+    width: 100px;
+    border: 1px solid orange;
+    font-family: "RotondaC";
+    cursor: pointer;
+    font-size: 16px;
+    &:hover {
+      animation: btnborder 300ms linear forwards;
+      color: orange;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
+}
+.couple-circle {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1200px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 970px) {
+    width: 100%;
+  }
+}
+.top-info-p {
+  color: white;
+}

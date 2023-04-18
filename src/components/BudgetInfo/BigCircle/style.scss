@@ -1,0 +1,48 @@
+svg {
+  max-width: 100%;
+}
+.span-indicator-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+.svg-indicator {
+  width: 200px;
+  height: 200px;
+}
+.svg-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: relative;
+  @media screen and (max-width: 550px) {
+    width: 100%;
+  }
+}
+
+.svg-indicator-track,
+.svg-indicator-indication {
+  cx: 100px;
+  cy: 100px;
+  r: 85px;
+  fill: transparent;
+  stroke-width: 5px;
+  stroke-linecap: round;
+}
+.svg-indicator-indication {
+  stroke-width: 15px;
+}
+
+.svg-indicator-track {
+  stroke: #ddd;
+}
+
+.svg-indicator-indication {
+  stroke: #8f4403;
+  stroke-dasharray: 533.8px;
+  stroke-dashoffset: 0px;
+  transition-duration: 2s;
+}

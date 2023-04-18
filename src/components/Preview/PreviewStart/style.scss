@@ -1,0 +1,154 @@
+@import "../../../helpers/styles/helpstyle.scss";
+.previewStart-container {
+  width: 200px;
+  height: 44px;
+  border: 2px solid red;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: $prev;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    color: orange;
+  }
+}
+.previewStart-img {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/budget-689a8.appspot.com/o/Img%2FheaderImg%2Fsettings%20(1).png?alt=media&token=9b62e1b8-b47e-49bd-90d2-8a090077a0a3");
+  transition-duration: 1s;
+  background-position: center;
+  animation: previewStartRotate 5s linear infinite;
+}
+.previewStart-img1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.previewStart-img2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.previewStart-img3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.goCenter {
+  animation: previewStartGo 1s linear forwards;
+}
+.noBackColor {
+  background-color: transparent;
+  border: none;
+}
+.img1Anime {
+  animation: img1 1.5s linear forwards;
+}
+.img3Anime {
+  animation: img3 1.5s linear forwards;
+}
+.RotateBack1 {
+  animation: previewStartRotateBack1 5s linear infinite;
+}
+.RotateBack3 {
+  animation: previewStartRotateBack3 5s linear infinite;
+}
+
+@keyframes previewStartRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes previewStartRotateBack1 {
+  0% {
+    bottom: 65px;
+    left: 71px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    bottom: 65px;
+    left: 71px;
+    transform: rotate(-360deg);
+  }
+}
+@keyframes previewStartRotateBack3 {
+  0% {
+    bottom: -65px;
+    left: 71px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    bottom: -65px;
+    left: 71px;
+    transform: rotate(-360deg);
+  }
+}
+@keyframes previewStartGo {
+  0% {
+    bottom: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  100% {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+@keyframes img1 {
+  0% {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    bottom: 0;
+    left: 0;
+  }
+
+  50% {
+    bottom: 0;
+    left: 80px;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    bottom: 65px;
+    left: 71px;
+  }
+}
+@keyframes img3 {
+  0% {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    bottom: 0;
+    left: 0;
+  }
+
+  50% {
+    bottom: 0;
+    left: 80px;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    bottom: -65px;
+    left: 71px;
+  }
+}

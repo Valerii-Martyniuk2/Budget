@@ -1,0 +1,47 @@
+@import "../../helpers/styles/helpstyle.scss";
+.but-add {
+  width: 60px;
+  height: 60px;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/budget-689a8.appspot.com/o/Img%2FheaderImg%2Fadd.png?alt=media&token=b40ec3cd-5981-497f-a92d-c92da7025b23");
+  background-size: 60px 60px;
+  position: fixed;
+  left: 20px;
+  top: 140px;
+  cursor: pointer;
+  z-index: 150;
+  transition-duration: 0.3s;
+  &:hover {
+    width: 65px;
+    height: 65px;
+    background-size: 65px 65px;
+  }
+  @media screen and (max-width: 1400px) {
+    top: 120px;
+  }
+  @media screen and (max-width: 700px) {
+    top: 85px;
+  }
+}
+
+.outlays-budgetInfo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  scrollbar-color: $primary-gold #fff;
+  scrollbar-width: auto;
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $primary-gold;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: $primary-gold;
+  }
+}

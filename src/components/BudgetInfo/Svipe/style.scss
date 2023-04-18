@@ -1,0 +1,59 @@
+.main-svipe {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  @media screen and (max-width: 1200px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 970px) {
+    width: 100%;
+  }
+}
+.svipe-container {
+  width: 450px;
+  height: 270px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+}
+.svipe {
+  width: 1350px;
+  height: 270px;
+  display: flex;
+  position: absolute;
+  transition-duration: 1s;
+}
+.svipe-item {
+  width: 450px;
+  height: 270px;
+  border-radius: 20px;
+  background-size: 450px 270px;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  font-size: 28px;
+  cursor: grab;
+  .sv-div {
+    width: 100%;
+    height: 85%;
+  }
+}
+.svipe-img1 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/budget-689a8.appspot.com/o/Img%2Fsvipe%2FuserData.jpg?alt=media&token=0ec330b9-2719-4556-af89-91b8b0d76df3");
+}
+.svipe-img2 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/budget-689a8.appspot.com/o/Img%2Fsvipe%2Fstatistics.jpg?alt=media&token=53527f2b-26eb-41c4-88e5-766edc9d921b");
+}
+.svipe-img3 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/budget-689a8.appspot.com/o/Img%2Fsvipe%2Fbudget.jpg?alt=media&token=0ab78929-5cc1-4fd5-9a1d-50ea0cdec3be");
+}
+.none-duration {
+  transition-duration: 0s;
+}

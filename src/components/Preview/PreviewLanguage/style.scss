@@ -1,0 +1,115 @@
+.previewLanguage-container {
+  width: 200px;
+  transition-duration: 1s;
+  margin-left: 20px;
+  border: 2px solid;
+  border-color: red;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  &:hover {
+    animation: langOutline 0.3s linear forwards;
+  }
+  @media screen and (max-width: 860px) {
+    &:hover {
+      animation: none;
+    }
+  }
+  @media screen and (max-width: 760px) {
+    margin: 0 auto;
+  }
+}
+.fly-language {
+  display: block;
+  position: absolute;
+  font-weight: bold;
+  color: white;
+}
+.fly-language1 {
+  font-size: 20px;
+  top: 2px;
+  left: 2px;
+  z-index: 40;
+}
+.fly-language2 {
+  font-size: 25px;
+  top: 20px;
+  right: 0;
+  z-index: 50;
+  animation: language2 15s linear infinite;
+}
+.fly-language3 {
+  font-size: 18px;
+  top: 5px;
+  right: 40px;
+  z-index: 30;
+}
+.fly-language4 {
+  font-size: 14px;
+  top: 20px;
+  left: 70px;
+  z-index: 20;
+}
+.fly-language5 {
+  font-size: 14px;
+  top: 25px;
+  left: 5px;
+  z-index: 20;
+}
+.fly-language6 {
+  font-size: 10px;
+  top: 32px;
+  left: 45px;
+  z-index: 20;
+}
+.fly-language7 {
+  font-size: 14px;
+  top: 2px;
+  right: 5px;
+  z-index: 20;
+}
+
+@keyframes language2 {
+  0% {
+    top: 20px;
+    right: 5px;
+  }
+
+  50% {
+    top: 20px;
+    right: 40px;
+  }
+
+  100% {
+    top: 20px;
+    right: 5px;
+  }
+}
+
+@keyframes langOutline {
+  25% {
+    border-top-color: orange;
+    border-right-color: red;
+    border-bottom-color: red;
+    border-left-color: red;
+  }
+  50% {
+    border-top-color: orange;
+    border-right-color: orange;
+    border-bottom-color: red;
+    border-left-color: red;
+  }
+  75% {
+    border-top-color: orange;
+    border-right-color: orange;
+    border-bottom-color: orange;
+    border-left-color: red;
+  }
+  100% {
+    border-color: orange;
+  }
+}
+.display-null {
+  display: none;
+}

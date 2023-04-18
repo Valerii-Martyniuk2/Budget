@@ -1,0 +1,190 @@
+@import "../../helpers/styles/helpstyle.scss";
+
+.budget-form {
+  padding: 30px;
+}
+.modal-exit {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .modal-exit-button {
+    height: 40px;
+    width: 40px;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/budget-689a8.appspot.com/o/Img%2FheaderImg%2Fdelete.png?alt=media&token=a3fa2451-4387-4ab8-922f-8360b02df1c9");
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    &:hover {
+      height: 45px;
+      width: 45px;
+      background-size: 45px 45px;
+    }
+  }
+}
+
+.form-div {
+  display: flex;
+  justify-content: space-between;
+}
+.half-form-input {
+  width: 17vw;
+  height: 40px;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: 1px solid orange;
+  font-family: "RotondaC";
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  &:hover {
+    animation: btnborder 300ms linear forwards;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 23vw;
+  }
+  @media screen and (max-width: 700px) {
+    width: 40vw;
+  }
+}
+.half-form-div {
+  width: 17vw;
+  height: 40px;
+  border-bottom: 1px solid #000;
+  font-family: "RotondaC";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  @media screen and (max-width: 1200px) {
+    width: 23vw;
+  }
+  @media screen and (max-width: 700px) {
+    width: 40vw;
+  }
+}
+.half-label {
+  width: 17vw;
+  position: relative;
+  span {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    color: orange;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 23vw;
+  }
+  @media screen and (max-width: 700px) {
+    width: 40vw;
+  }
+}
+.form-select-div {
+  position: relative;
+}
+.half-form-input-select {
+  position: absolute;
+  background-color: orange;
+  top: 50px;
+  z-index: 100;
+  color: white;
+  cursor: pointer;
+  :hover {
+    background-color: silver;
+  }
+}
+.select-img {
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  margin-right: 10px;
+}
+.select-imgCar {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/budget-689a8.appspot.com/o/Img%2Fform%2Fcar.png?alt=media&token=04dc1dca-3923-4d43-b92a-2e5c2ab2b46c");
+}
+.select-imgHome {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/budget-689a8.appspot.com/o/Img%2Fform%2Fhouse.png?alt=media&token=6b114fc0-199f-42ab-8a96-e5ef8f75e92a");
+}
+.select-imgFood {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/budget-689a8.appspot.com/o/Img%2Fform%2Fdiet.png?alt=media&token=39ea7a4f-7e7a-4863-8264-2dfbd6498da9");
+}
+.select-imgActivities {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/budget-689a8.appspot.com/o/Img%2Fform%2FActivities.png?alt=media&token=401a9ac3-f706-4336-9de8-06a72400a916");
+}
+.select-imgUA {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/budget-689a8.appspot.com/o/Img%2Fform%2Fukraine.png?alt=media&token=751084d3-5ed2-4aa8-8e5f-ca37e3517b1e");
+}
+.select-imgENG {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/budget-689a8.appspot.com/o/Img%2Fform%2Funited-states.png?alt=media&token=75c72493-bad4-43c0-8f30-f98985dce656");
+}
+.select-imgArrow {
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/budget-689a8.appspot.com/o/Img%2Fform%2Fprevious.png?alt=media&token=62ee50c3-fdad-48c8-a61a-72f92927d19c");
+  transform: rotate(-90deg);
+}
+.borderBottomNone {
+  border-bottom: none;
+  padding-left: 0;
+  justify-content: space-around;
+}
+.peddingLeftNone {
+  padding-left: 0px;
+}
+
+//////////TEXT AREA////////////
+.text-area-div {
+  position: relative;
+  span {
+    position: absolute;
+    margin-left: 5px;
+    background-color: $prev;
+    color: orange;
+  }
+}
+
+.form-textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid orange;
+  background-color: $prev;
+  font-size: 16px;
+  resize: none;
+  color: white;
+  &:hover {
+    animation: btnborder 300ms linear forwards;
+  }
+}
+//////////BUTTON////////////
+.form-btn-commit {
+  height: 30px;
+  width: 150px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid orange;
+  font-family: "RotondaC";
+  cursor: pointer;
+
+  &:hover {
+    animation: btnborder 300ms linear forwards;
+    color: orange;
+  }
+}
+.btn-disabled {
+  color: silver !important;
+  border: 1px solid silver !important;
+  &:hover {
+    animation: none !important;
+    color: silver !important;
+  }
+}
+
+//////////////////MEDIA////////////////
+@media screen and (max-width: 1200px) {
+}

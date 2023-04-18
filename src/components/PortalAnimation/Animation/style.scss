@@ -1,0 +1,37 @@
+@import "../../../helpers/styles/helpstyle.scss";
+.animation-backdrop {
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0.6px);
+  display: flex;
+  justify-content: center;
+  z-index: 20000;
+  overflow: auto;
+}
+.outlays-modal-content {
+  width: 270px;
+  height: 350px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(14, 11, 11);
+  overflow: hidden;
+  overflow: hidden;
+}
+
+@keyframes fireRocket {
+  0% {
+    width: 5px;
+    height: 5px;
+  }
+
+  100% {
+    width: 40px;
+    height: 40px;
+  }
+}

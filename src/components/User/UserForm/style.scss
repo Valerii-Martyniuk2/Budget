@@ -1,0 +1,55 @@
+@import "../../../helpers/styles/helpstyle.scss";
+
+.user-form {
+  width: 50vw;
+  padding: 20px 20px 40px 20px;
+  margin: 0 auto;
+  border: 2px solid $primary-gold;
+  border-radius: 10px;
+  p {
+    font-size: 14px;
+    color: $primary-gold;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 60vw;
+  }
+  @media screen and (max-width: 700px) {
+    width: 100%;
+  }
+}
+.user-form-btn {
+  margin-top: 10px;
+  height: 40px;
+  width: 150px;
+  color: white;
+  border: 1px solid orange;
+  background-color: $prev;
+  &:hover {
+    animation: btnborder 300ms linear forwards;
+    color: orange;
+  }
+}
+
+@keyframes btnborder {
+  25% {
+    border-top-color: red;
+    border-right-color: orange;
+    border-bottom-color: orange;
+    border-left-color: orange;
+  }
+  50% {
+    border-top-color: red;
+    border-right-color: red;
+    border-bottom-color: orange;
+    border-left-color: orange;
+  }
+  75% {
+    border-top-color: red;
+    border-right-color: red;
+    border-bottom-color: red;
+    border-left-color: orange;
+  }
+  100% {
+    border-color: red;
+  }
+}

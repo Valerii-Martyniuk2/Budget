@@ -1,0 +1,57 @@
+.MyPreview {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(9, 18, 33);
+}
+
+.preview-centerInfo {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.preview-centerInfoTitle {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 45px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(8, 116, 15, 1) 0%,
+
+    rgba(158, 69, 198, 1) 20%,
+    rgba(136, 6, 6, 1) 30%,
+    rgba(235, 138, 2, 1) 40%,
+    rgba(8, 116, 15, 1) 50%,
+
+    rgba(158, 69, 198, 1) 70%,
+    rgba(136, 6, 6, 1) 80%,
+    rgba(235, 138, 2, 1) 90%,
+    rgba(8, 116, 15, 1) 100%
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textAnimation 3s linear infinite;
+}
+.animeBack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.499);
+  transition-duration: 3s;
+}
+.animeBack2 {
+  background-color: black;
+}
+@keyframes textAnimation {
+  0% {
+    background-position: 0 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+// #B38208 - КОЛІР ШЕСТЕРНІ

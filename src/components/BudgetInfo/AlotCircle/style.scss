@@ -1,0 +1,40 @@
+.svg-indicator1 {
+  width: 100px;
+  height: 100px;
+}
+
+.svg-indicator-track1,
+.svg-indicator-indication1 {
+  cx: 50px;
+  cy: 50px;
+  r: 40px;
+  fill: transparent;
+  stroke-width: 5px;
+  stroke-linecap: round;
+}
+.svg-indicator-indication1 {
+  stroke-width: 10px;
+}
+
+.svg-indicator-track1 {
+  stroke: #ddd;
+}
+
+.svg-indicator-indication1 {
+  stroke: #4b2c76;
+  stroke-dasharray: 251.2px;
+  transition-duration: 2s;
+  // stroke-dashoffset: 125px;
+}
+.alot-circle {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .svg-div2 {
+    width: 50%;
+  }
+  @media screen and (max-width: 550px) {
+    width: 100%;
+  }
+}
